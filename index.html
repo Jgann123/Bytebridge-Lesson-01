@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form Flow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="form-container">
+            <h2 class="mb-4">Personal Information Form</h2>
+            <form id="personal-info-form">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="profilePic" class="form-label">Profile Picture</label>
+                    <input type="file" class="form-control" id="profilePic" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div id="id-card-container" class="d-none">
+            <div id="id-card" class="card">
+                <img id="card-image" class="card-img-top" alt="Profile Picture">
+                <div class="card-body">
+                    <h5 class="card-title" id="card-name"></h5>
+                    <p class="card-text" id="card-address"></p>
+                </div>
+            </div>
+            <button id="print-button" class="btn btn-secondary mt-3">Print ID Card</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
